@@ -1,0 +1,13 @@
+[project]
+name = "appv2"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.12",
+    "marimo>=0.13.15",
+    "numpy>=2.2.6",
+    "pandas>=2.3.0",
+    "polars>=1.30.0",
+]
