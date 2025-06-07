@@ -2,7 +2,7 @@
 FROM python:3.13-slim
 
 # Set working directory
-WORKDIR /appv2
+WORKDIR /app
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
@@ -25,7 +25,7 @@ COPY . .
 
 # Create non-root user for security
 RUN useradd --create-home --shell /bin/bash app \
-    && chown -R app:app /appv2
+    && chown -R app:app /app
 USER app
 
 # Expose port
