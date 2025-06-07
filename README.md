@@ -1,5 +1,3 @@
-Based on the work of [Miklevin](https://github.com/miklevin/python_nix_flake).
-
 # Marimo Nix Starter
 
 This is a starter project for building a Marimo app using Nix.
@@ -13,7 +11,7 @@ The idea is to work locally with marimo and then deploy to the cloud to share re
 - Multi-page marimo app when containerized (see [Deploying](#deploying))
 - Python 3.13
 - uv for dependency management
-- Nix flakes for development environment - Credit to [Miklevin](https://github.com/miklevin/python_nix_flake)
+- Nix flake for development environment - Credit to [Miklevin](https://github.com/miklevin/python_nix_flake)'s JupyterLab flake.
 
 ## Getting Started
 
