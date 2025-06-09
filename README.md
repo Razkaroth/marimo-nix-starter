@@ -1,3 +1,15 @@
+---
+title: Marimo multi-page starter app
+emoji: 🍃
+colorFrom: indigo
+colorTo: purple
+sdk: docker
+pinned: true
+license: mit
+short_description: Template for internal tools 
+---
+
+
 # Marimo Nix Starter
 
 This is a starter project for building a Marimo app using Nix.
@@ -45,6 +57,32 @@ stop
 
 This works by serving a asgi app via fastapi. `main.py` is the entrypoint for the app.
 
+
+### Hugging Face Spaces
+
+Probably the easiest way to deploy is to use Hugging Face Spaces.
+
+
+1. Create a Hugging Face Space and link it.
+
+Once you have created a Hugging Face Space, you must add the repo as a remote to your local git repo.
+
+```bash
+git remote add hf https://huggingface.co/spaces/razkarot/marimo-nix-starter
+```
+
+2. Simply push your changes to the remote.
+
+```bash
+git push hf main
+```
+
+I ussually put both github and hugging face on the same remote so I can push to both on the same command.
+
+### Docker
+
+You can also build and run the container locally and push it to a container based cloud service.
+
 1. Register pages in `main.py`
 
 ```python
@@ -67,3 +105,5 @@ docker run -p 8000:8000 marimo-nix-starter
 4. ????
 
 5. Profit
+
+
