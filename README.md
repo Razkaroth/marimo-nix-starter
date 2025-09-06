@@ -39,6 +39,15 @@ git clone https://github.com/razkarot/marimo-nix-starter.git --depth 1
 nix develop
 ```
 
+Alternatively you can install the environment using uv or pip:
+Create an environment
+```bash
+python -m venv .venv
+```
+Install dependencies
+```bash
+uv pip install -r requirements.txt # or pip install -r requirements.txt
+```
 3. Run the app
 
 ```bash
