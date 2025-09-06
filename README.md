@@ -42,13 +42,7 @@ nix develop
 3. Run the app
 
 ```bash
-start
-```
-
-4. Stop the app
-
-```bash
-stop
+marimo edit --watch
 ```
 
 
