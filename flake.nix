@@ -56,7 +56,7 @@
         # Common packages that we want available in our environment
         # regardless of the operating system
         commonPackages = with pkgs; [
-          python313Full  # Python 3.13 interpreter
+          python313      # Python 3.13 interpreter
           uv             # Modern Python dependency manager replacing virtualenv and pip
           figlet         # For creating ASCII art welcome messages
           tmux           # Terminal multiplexer for managing sessions
