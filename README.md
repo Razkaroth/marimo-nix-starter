@@ -24,6 +24,26 @@ The idea is to work locally with marimo and then deploy to the cloud to share re
 - Python 3.13
 - uv for dependency management
 - Nix flake for development environment - Credit to [Miklevin](https://github.com/miklevin/python_nix_flake)'s JupyterLab flake.
+- Official [marimo skills](https://github.com/marimo-team/skills) included in `.agents/` for AI-assisted development
+
+## Agent Skills
+
+This repo ships with 10 official marimo skills in `.agents/skills/` for AI coding assistants (OpenCode, Claude Code, Cursor, etc.):
+
+| Skill | Description |
+|---|---|
+| `marimo-notebook` | Write marimo notebooks in correct format |
+| `marimo-batch` | Prepare notebook for scheduled runs |
+| `jupyter-to-marimo` | Convert .ipynb to marimo |
+| `streamlit-to-marimo` | Convert Streamlit app to marimo |
+| `anywidget-generator` | Generate anywidget components |
+| `wasm-compatibility` | Check WASM compatibility |
+| `implement-paper` | Implement research paper as notebook |
+| `implement-paper-auto` | Auto-implement paper |
+| `auto-paper-demo` | Auto-demo a paper |
+| `add-molab-badge` | Add "Open in molab" badges |
+
+Install via the skills CLI: `npx skills add marimo-team/skills`
 
 ## Getting Started
 
@@ -102,7 +122,7 @@ docker build -t marimo-nix-starter .
 3. Run the container
 
 ```bash
-docker run -p 8000:8000 marimo-nix-starter
+docker run -p 7860:7860 marimo-nix-starter
 ```
 
 4. ????
